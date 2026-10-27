@@ -17,8 +17,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # arm64 Sonoma bottles also serve Sequoia and Tahoe; Intel gets Sequoia.
-        os: [macos-14, macos-26, macos-15-intel]
+        # Apple Silicon on the macOS versions homebrew-core still bottles for. Sonoma and
+        # Intel (tier 3) get no core bottles, so test-bot would only skip the formula there.
+        os: [macos-15, macos-26]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 60
     permissions:

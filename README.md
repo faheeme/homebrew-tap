@@ -18,8 +18,10 @@ Then run `feterm` from any terminal, or add the app to Applications (Launchpad, 
 ln -sf "$(brew --prefix)/opt/feterm/FeTerm.app" /Applications/FeTerm.app
 ```
 
-Update with `brew upgrade`. Prebuilt bottles exist for Apple Silicon (macOS 14 and newer)
-and Intel (macOS 15 and newer); other versions build from source.
+Update with `brew upgrade`. Prebuilt bottles exist for Apple Silicon on macOS 15 Sequoia and
+macOS 26 Tahoe. On macOS 14 Sonoma and on Intel Macs, Homebrew itself no longer ships
+prebuilt packages, so it builds FeTerm and its libraries from source (slow); there the disk
+image from the [releases page](https://gitlab.com/faheeme/feterm/-/releases) is quicker.
 
 Installing through Homebrew avoids the Gatekeeper "unidentified developer" prompt that the
 unsigned disk images on the [releases page](https://gitlab.com/faheeme/feterm/-/releases) get.
