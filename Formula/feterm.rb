@@ -6,6 +6,12 @@ class Feterm < Formula
   license "MIT"
   head "https://gitlab.com/faheeme/feterm.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/faheeme/homebrew-tap/releases/download/feterm-0.5.2"
+    sha256 arm64_tahoe:   "3ee9290f346e6bc3569c5525b566d2d9660199dee7a85458ab790419cdb9521e"
+    sha256 arm64_sequoia: "45825a51ff650d9fc6a8e18b8de4da5f1cd7fd2adab5f78a565a6aaa2e466733"
+  end
+
   depends_on "pkgconf" => :build
   depends_on "fontconfig"
   depends_on "freetype"
