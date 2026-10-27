@@ -45,4 +45,6 @@ jobs:
         if: github.event.pull_request.head.repo.fork == false
         env:
           BRANCH: ${{ github.event.pull_request.head.ref }}
-        run: git push --delete origin "$BRANCH"
+        # pr-pull tags the bottles <formula>-<version>, the same name as the usual PR
+        # branch, so a bare name is ambiguous: delete the branch ref explicitly.
+        run: git push --delete origin "refs/heads/$BRANCH"
