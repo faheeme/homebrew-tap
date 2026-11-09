@@ -7,9 +7,9 @@ class Feterm < Formula
   head "https://gitlab.com/faheeme/feterm.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/faheeme/homebrew-tap/releases/download/feterm-0.5.4"
-    sha256 arm64_tahoe:   "2f902ed60edbdf07dd5147f2250ffd77278c0c0858805cf4ec43c45ea68512b7"
-    sha256 arm64_sequoia: "653e85cf4afe28d1304bebee5fb5c76fe5ae491d7eadfb50dccf1fd6b6fd3bb8"
+    root_url "https://github.com/faheeme/homebrew-tap/releases/download/feterm-0.5.5"
+    sha256 arm64_tahoe:   "899f3d72ef6d7d00128807b8862351e06d385486d51f102904c82ae062000233"
+    sha256 arm64_sequoia: "f79809e8b53336a5e9068c37a6c1f2127d048fda5e6cdc411f5db27bc77bee8b"
   end
 
   depends_on "pkgconf" => :build
