@@ -1,8 +1,8 @@
 class Feterm < Formula
   desc "GPU-rendered terminal with Cisco, Arista and Juniper syntax highlighting"
   homepage "https://faheeme.gitlab.io/feterm-site/"
-  url "https://gitlab.com/faheeme/feterm/-/archive/v0.5.5/feterm-v0.5.5.tar.gz"
-  sha256 "71bd1c73974038b7b58bc6a37af3ca71e9e8ccd80597bf6675465db3008fd953"
+  url "https://gitlab.com/faheeme/feterm/-/archive/v0.5.6/feterm-v0.5.6.tar.gz"
+  sha256 "6a9fc668503e100f1f3702c28c54427c654d590300544cfa50feb3f3ab555522"
   license "MIT"
   head "https://gitlab.com/faheeme/feterm.git", branch: "main"
 
